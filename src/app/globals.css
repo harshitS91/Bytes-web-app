@@ -47,3 +47,15 @@
     margin: 20px;
     margin-right: auto;
 }
+
+.headerItem {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
