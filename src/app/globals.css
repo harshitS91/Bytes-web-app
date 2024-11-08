@@ -1,42 +1,49 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.input-wrapper {
+    margin: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.input-wrapper {
+    width: 200px;
+    height: 30px;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.buttonLogin {
+    width: 210px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.buttonSignup {
+    width: 210px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 25px;
+
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.container {
+    text-align: center
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.signUpDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.signLoginDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-link {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: skyblue;
+    margin: 20px;
+    margin-right: auto;
 }

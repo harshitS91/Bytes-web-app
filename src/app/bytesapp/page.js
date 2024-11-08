@@ -1,11 +1,26 @@
-import bytesappLogin from "../_components/bytesappLogin";
-import bytesappSignup from "../_components/bytesappSignup";
+'use client'
+import { useState } from "react";
+import BytesappLogin from "../_components/bytesappLogin";
+import BytesappSignup from "../_components/bytesappSignup";
+import BytesappHeader from "../_components/bytesappHeader";
+
 const bytesapp = () => {
+    const [login, setlogin] = useState(true)
     return (
         <>
-            <h1>Restaurant Login/Signup Page</h1>
-            <>bytesappLogin </>
-            <>bytesappSignup </>
+            <div className="container">
+                <BytesappHeader />
+                <h1>Restaurant Login/Signup Page</h1>
+                {
+                    login ? <BytesappLogin /> : <BytesappSignup />
+                }
+
+                <div>
+                    <button className="button-link" onClick={() => setlogin(!login)}>
+                        {login ? "Do not have an account? Signup" : "Already have an account? Login"}
+                    </button>
+                </div>
+            </div>
         </>
     )
 }
