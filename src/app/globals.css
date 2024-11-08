@@ -24,7 +24,7 @@
 }
 
 .container {
-    text-align: center
+    text-align: center;
 }
 
 .signUpDiv {
@@ -58,4 +58,16 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+}
+
+.footerContainer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* optional: if you want it to span the full width */
+    text-align: center;
+    /* centers the content within the footer */
+    padding: 0px;
 }

@@ -3,7 +3,7 @@ const BytesappHeader = () => {
     return (
         <div className='headerContainer'>
             <div className="logo">
-                <img style={{ width: 100 }} src="https://www.bytefoods.co/wp-content/uploads/2017/05/Byte-Foods-Logo-GREEN.png" />
+                <img style={{ width: 50 }} src="https://www.bytefoods.co/wp-content/uploads/2017/05/Byte-Foods-Logo-GREEN.png" />
             </div>
             <div>
                 <Link href="/">Home</Link>

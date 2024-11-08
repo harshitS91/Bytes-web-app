@@ -2,7 +2,8 @@
 import { useState } from "react";
 import BytesappLogin from "../_components/bytesappLogin";
 import BytesappSignup from "../_components/bytesappSignup";
-import BytesappHeader from "../_components/bytesappHeader";
+import BytesappHeader from "../_components/BytesappHeader";
+import BytesappFooter from "../_components/BytesappFooter";
 
 const bytesapp = () => {
     const [login, setlogin] = useState(true)
@@ -20,6 +21,7 @@ const bytesapp = () => {
                         {login ? "Do not have an account? Signup" : "Already have an account? Login"}
                     </button>
                 </div>
+                <BytesappFooter />
             </div>
         </>
     )
